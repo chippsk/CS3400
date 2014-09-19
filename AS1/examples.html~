@@ -1,6 +1,7 @@
 <html>
 	<h1>HTML Examples</h1>
 
+	<a href="template.html">Template for all Examples</a></br>
 	<a href="code.html">XMP Tag</a></br>
 	<a href="metadata.html">Metadata</a></br>
 	<a href="scripts.html">Scripts</a></br>
