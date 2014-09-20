@@ -7,9 +7,15 @@
 	<p>The script tag will load some script on the page from a specified file defined within the script tag itself.</p>
 
 	<xmp style="padding:0px;margin:0px;">
+		<!--Start a javascript block -->
 		<script type="text/javascript">
-		document.write("Some javascript")
+			document.write("Some javascript")
 		</script>
+
+		<!--Use this tag to display something when the browser can't run any javascript -->
+		<noscript>
+			<p>You don't have javascript enabled!</p>
+		</noscript>
 	</xmp>
 </body>
 </html>
