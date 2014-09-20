@@ -24,5 +24,23 @@
 			<link rel="index" href="/var/www/index.html"/>
 		</head>
 	</xmp>
+
+<hr />
+		<head>
+			<title>While included in the head tag, title isn't meta</title>
+
+			<!-- You can do pretty much anything with this -->
+			<meta name="metapage" content="Some description of the page">
+
+			<!-- HTTP headers that are sent to the browser before the content -->
+			<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+			<!-- The Base tag creates a base URL for resolving relative URLs.
+		     This is used so when the page gets visited, all relative links will use that URL as the current page. -->
+			<base href="index.html">
+
+			<!-- Links are used to define documents -->
+			<link rel="index" href="/var/www/index.html"/>
+		</head>
 </body>
 </html>

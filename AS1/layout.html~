@@ -45,42 +45,5 @@
 
 		
 	</xmp>
-
-
-<hr />
-
-<body>
-			<p>Content</p>
-		</body>
-
-		<!-- Sections are sections... You can have subsections. -->
-		<section>
-			<h1>A title to the section</h1>
-			<p>An explination of the section<p>
-		</section>
-
-		<!-- The nav tag defines a section of navigation, new in html5 -->
-		<nav>
-			<a href="something">A bunch of links would go here</a>
-		</nav>
-
-		<!-- this one is pretty obvious but worth mentioning because it is new -->
-		<article>
-			
-		</article>
-
-		<!-- general formatting stuff like -->
-		<header></header>
-		<footer></footer>
-
-		<!-- address is a new way to present contact information -->
-		<address>
-			<a href="mailto:trumpnazi@gmail.com">Email Me</a><br/>
-		</address>
-
-		<!-- The main tag is used for the main block of your page, before it was commonplace to use a div labeled main -->
-		<main>
-			<p>All of your dumb content</p>
-		</main>
 </body>
 </html>

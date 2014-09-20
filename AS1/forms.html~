@@ -16,7 +16,7 @@
 			<input type="submit" value="Submit" />
 		</form>
 	</xmp>
-<hr />
+
 	<form action="/html/tags/html_form_tag_action.cfm" method="get">
 		First name:
 		<input type="text" name="first_name" value="" maxlength="100" />
