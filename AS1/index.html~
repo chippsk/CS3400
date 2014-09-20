@@ -2,11 +2,9 @@
 <head>
 	<title>Home</title>
 </head>
-<body>
 	<h1>Assignment 1</h1>
 	<h2>HTML website about HTML</h2>
 	<p>By: Kyle, David, Paulo</p>
 	<a href="documentation.html">HTML Documentation</a><br/>
 	<a href="examples.html">Examples</a><br/>
-</body>
 </html>
