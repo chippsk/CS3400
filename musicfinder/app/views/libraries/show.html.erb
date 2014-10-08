@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @library.artist %>
+</p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @library.album %>
+</p>
+
+<p>
+  <strong>Song:</strong>
+  <%= @library.song %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @library.year %>
+</p>
+
+<%= link_to 'Edit', edit_library_path(@library) %> |
+<%= link_to 'Back', libraries_path %>
