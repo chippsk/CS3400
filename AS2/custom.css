@@ -1,0 +1,14 @@
+
+body {
+	min-width: 420px;
+}
+
+.content {
+	padding-top: 150px;
+	padding-left: 50px;	
+	text-align: left;
+}
+
+.content > a {
+	width: 120px;
+}
