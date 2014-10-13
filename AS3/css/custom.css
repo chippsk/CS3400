@@ -12,3 +12,8 @@ html, body { height: 100%;}
 	text-align: center;
 	border-radius: 10px;
 }
+
+.content p {
+	text-align: justify;
+	text-justify: inter-word;
+}
