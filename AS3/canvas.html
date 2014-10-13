@@ -6,6 +6,7 @@
 	<title>3rd Assignment</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<script src="js/jquery-2.1.1.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
 	<div class="container">
@@ -16,16 +17,43 @@
 			<li> <a href="testing.html" title="Unit Testing">Unit Testing</a></li>
 			<li class="active"> <a href="canvas.html" title="(RAW) CANVAS">(RAW) CANVAS</a></li>
 			<li> <a href="kinetic.html" title="KineticJS">KineticJS</a></li>
+			<li> <a href="embedded.html" title="Embedded">Using Embedded Browsers</a></li>
 		</ul>
 		<div class="content col-md-9">
 			<h1>Canvas</h1>
 			<p><strong>Canvas</strong> is a HTML element that is used to draw graphics. In order to draw something in the canvas you must use javascript. </p>
 
 			<p>Let's see an example:</p>
+
+			<canvas id="exampleCanvas">
+				content
+			</canvas>
+
+			<script type="text/javascript">
+				var canvas = document.getElementById('exampleCanvas');
+				var ctx = canvas.getContext('2d'); 
+				
+
+				function getPos(canvas, event){
+					var rect = canvas.getBoundingClientRect();
+					return {
+						x: event.clientX - rect.left,
+						y: event.clientY - rect.top
+					};
+				};
+
+				// logic to draw.
+				canvas.addEventListener('mousemove', function(event) {
+					var position = getPos(canvas, event);
+					
+					canvas.fillStyle = '#'+(Math.random().toString(16) + '000000').slice(2, 8);
+					ctx.fillRect(position.x, position.y, 1, 1);
+				}, false);
+
+
+			</script>
 		</div>
-		<canvas>
-			content
-		</canvas>
+		
 	</div>
 	
 	
