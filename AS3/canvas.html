@@ -11,7 +11,7 @@
 <body>
 	<div class="container">
 		<ul class="nav nav-pills nav-stacked col-md-3">
-			<li> <a href="#" title="Home">Home</a> </li>
+			<li> <a href="index.html" title="Home">Home</a> </li>
 			<li> <a href="standards.html" title="Programming">Programming Standards</a></li>
 			<li> <a href="debugging.html" title="Debugging">Debugging</a></li>
 			<li> <a href="testing.html" title="Unit Testing">Unit Testing</a></li>
@@ -52,8 +52,34 @@
 
 
 			</script>
+
+			<p>The code needed above was:</p>
+		<xmp style="text-align:left;">
+			<script type="text/javascript">
+				var canvas = document.getElementById('exampleCanvas');
+				var ctx = canvas.getContext('2d'); 
+				
+
+				function getPos(canvas, event){
+					var rect = canvas.getBoundingClientRect();
+					return {
+						x: event.clientX - rect.left,
+						y: event.clientY - rect.top
+					};
+				};
+
+				// logic to draw.
+				canvas.addEventListener('mousemove', function(event) {
+					var position = getPos(canvas, event);
+					
+					canvas.fillStyle = '#'+(Math.random().toString(16) + '000000').slice(2, 8);
+					ctx.fillRect(position.x, position.y, 1, 1);
+				}, false);
+			</<script>
+			</xmp>
+		</code>
 		</div>
-		
+
 	</div>
 	
 	
