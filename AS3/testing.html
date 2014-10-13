@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>QUnit basic example</title>
+		<link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.15.0.css">
+	</head>
+	<body>
+		<div id="qunit"></div>
+		<div id="qunit-fixture"></div>
+		<script src="//code.jquery.com/qunit/qunit-1.15.0.js"></script>
+		<script>
+			QUnit.test( "a basic test example", function( assert ) {
+			var value = "hello";
+			assert.equal( value, "hello", "We expect value to be hello" );
+			});
+		</script>
+	</body>
+
+
+	<xmp style="padding:0px;margin:0px;">
+		This should go in the head to include the qunit framework
+		<head>
+			<meta charset="utf-8">
+			<title>QUnit basic example</title>
+			<link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.15.0.css">
+		</head>
+		Then actually using it would look something like this.
+		<script src="//code.jquery.com/qunit/qunit-1.15.0.js"></script>
+		<script>
+			QUnit.test( "a basic test example", function( assert ) {
+			var value = "hello";
+			assert.equal( value, "hello", "We expect value to be hello" );
+			});
+		</script>
+
+	</xmp>
+</html>
