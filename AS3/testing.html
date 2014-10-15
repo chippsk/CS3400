@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 	<head>
 		<meta charset="utf-8">
 		<title>QUnit basic example</title>
@@ -9,24 +10,53 @@
 		<div id="qunit"></div>
 		<div id="qunit-fixture"></div>
 		<script src="tests/qunit-1.15.0.js"></script>
+=======
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>3rd Assignment</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/qunit-1.15.0.css">
+	<script src="js/qunit-1.15.0.js"></script>
+</head>
+<body>
+	<div class="container">
+		<ul class="nav nav-pills nav-stacked col-md-3">
+			<li> <a href="index.html" title="Home">Home</a> </li>
+			<li> <a href="standards.html" title="Programming">Programming Standards</a></li>
+			<li> <a href="debugging.html" title="Debugging">Debugging</a></li>
+			<li class="active"> <a href="testing.html" title="Unit Testing">Unit Testing</a></li>
+			<li> <a href="canvas.html" title="(RAW) CANVAS">(RAW) CANVAS</a></li>
+			<li> <a href="kinetic.html" title="KineticJS">KineticJS</a></li>
+			<li> <a href="embedded.html" title="Embedded">Using Embedded Browsers</a></li>
+		</ul>
+		<div class="content col-md-9">
+			<h1>Unit Testing in Javascript</h1>
+			<p>If you need to do some unit testing to make your code more robust and <i title="not really">trustworthy</i> you might want to do some <strong>Unit Testing</strong> to help you in this task you can use QUnit. <br><br><h3>This may take a while</h3></p>
+
+			<div id="qunit"></div>
+			<div id="qunit-fixture"></div>
+			
+>>>>>>> 0dc43f98e0b4ef9bc99dbe3d462f80f2526fd31b
 		<script>
 			QUnit.test( "a basic test example", function( assert ) {
 			var value = "hello";
 			assert.equal( value, "hello", "We expect value to be hello" );
 			});
 		</script>
-	</body>
+	
 
 
-	<xmp style="padding:0px;margin:0px;">
+	<xmp style="padding:0px;margin:0px;text-align:left;">
 		This should go in the head to include the qunit framework
 		<head>
 			<meta charset="utf-8">
 			<title>QUnit basic example</title>
-			<link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.15.0.css">
+			<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.15.0.css">
 		</head>
 		Then actually using it would look something like this.
-		<script src="//code.jquery.com/qunit/qunit-1.15.0.js"></script>
+		<script src="http://code.jquery.com/qunit/qunit-1.15.0.js"></script>
 		<script>
 			QUnit.test( "a basic test example", function( assert ) {
 			var value = "hello";
@@ -35,4 +65,11 @@
 		</script>
 
 	</xmp>
+		</div>
+
+
+	</div>
+	
+	
+</body>
 </html>
