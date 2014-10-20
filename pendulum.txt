@@ -1,0 +1,15 @@
+[Kinetic Sculpture]
+
+1 - Plot the 2 bars with angles between them [ use two sliders ]
+2 - Make the functions to calculate de Theta functions 
+3 - Interface. 
+
+___________________________________________________
+
+Links to search 
+
+   - https://news.ycombinator.com/item?id=8007477
+   - http://en.wikipedia.org/wiki/Symplectic_integrator
+   - http://www.dllu.net/dp/
+   - http://kevingibbons.org/doublependulum. [cool source]
+
