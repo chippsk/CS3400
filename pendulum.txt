@@ -1,0 +1,21 @@
+[Kinetic Sculpture]
+
+1 - Plot the 2 bars with angles between them [ use two sliders ]
+2 - Make the functions to calculate de Theta functions 
+3 - Interface. 
+
+___________________________________________________
+
+Links to search 
+
+   - https://news.ycombinator.com/item?id=8007477
+   - http://en.wikipedia.org/wiki/Symplectic_integrator
+   - http://www.dllu.net/dp/
+   - http://kevingibbons.org/doublependulum. [cool source]
+
+Stuff to do
+1.	Double Pendulum, start working on it, he is going to send an email soon.
+2.	Look at Jquery mobile, compare to javascript?
+3.	Look for sites with guidelines for good user interface design. (fonts,color)
+
+Then he droned on for an hour about colors.
