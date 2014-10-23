@@ -1,0 +1,10 @@
+step 1 
+	plot, find angles
+
+step 2
+	take initial angles, and get theta 1 and 2 in javascript
+
+step 3
+	interface for it.
+
+
