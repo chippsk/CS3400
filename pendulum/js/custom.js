@@ -11,6 +11,10 @@ $(document).ready(function(){
 	// main() declaration
 	// main();
 
+	$("#firstAngle").keyup(function(event) {
+		alert(event);
+	});
+
 	function theta(int inputs){
 		// TODO
 	}
@@ -20,6 +24,10 @@ $(document).ready(function(){
 		var sa = $("#secondAngle").val();
 
 		try {
+			fa = parseInt(fa) % 360;
+			sa = parseInt(sa) % 360;
+
+			alert()
 
 		} catch (err) {
 			alert("The angles have to be integers.");
@@ -27,7 +35,7 @@ $(document).ready(function(){
 	}
 
 	function main(){
-
+		validateInput();
 	}
 
 
