@@ -1,0 +1,24 @@
+Find examples of good and bad interface design.
+
+good interface design rules
+
+	fonts
+		art
+		cross platform
+		readability
+		size
+		scaling
+
+	color
+		art
+		color wheel
+		recommeneded palets
+		cross platform issues
+
+	sound
+		volumne
+		cross platform
+		accessability
+
+	mobile devices
+	accessability
