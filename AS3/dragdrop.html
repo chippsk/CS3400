@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<title>A Basic Drag &amp; Drop Example</title>
+<script type="text/javascript">
+<!--
+var addEvent = (function () {
+  if (document.addEventListener) {
+    return function (el, type, fn) {
+      if (el && el.nodeName || el === window) {
+        el.addEventListener(type, fn, false);
+      } else if (el && el.length) {
+        for (var i = 0; i < el.length; i++) {
+          addEvent(el[i], type, fn);
+        }
+      }
+    };
+  } else {
+    return function (el, type, fn) {
+      if (el && el.nodeName || el === window) {
+        el.attachEvent('on' + type, function () { return fn.call(el, window.event); });
+      } else if (el && el.length) {
+        for (var i = 0; i < el.length; i++) {
+          addEvent(el[i], type, fn);
+        }
+      }
+    };
+  }
+})();
+
+
+addEvent(window, 'load', function() {
+  var draggableBall = document.getElementById('ball');
+  var draggableText = document.getElementById('text'); 
+  var drop          = document.getElementById('drop');
+ 
+  function cancel(e) {
+    if (e.preventDefault) e.preventDefault();
+    return false;
+  }
+
+  //Tells the browser that we can drop on this target
+  addEvent(drop, 'dragover', cancel);  //DOM event
+  addEvent(drop, 'dragenter', cancel); //IE event
+	
+  addEvent(drop, 'drop', function (e) {
+    if (e.preventDefault) e.preventDefault(); // stops the browser from redirecting off to the text.
+    this.innerHTML = "<strong>Done!</strong>";
+	  this.style.backgroundColor="#CCCC00"; 
+    
+		return false;
+  });
+});
+// -->
+</script>
+<style>
+#drop {
+  min-height: 150px;
+  width: 250px;
+  border: 1px solid blue;
+  margin: 10px;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+  <h1 align=center>A Basic Drag &amp; Drop Demo</h1>
+	This is a draggable item
+  <img id="ball" alt="ball (2K)" src="img/ball.gif" height="50" width="50" draggable="true" />
+  <div id="drop"></div>
+</body>
+</html>
