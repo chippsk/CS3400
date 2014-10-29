@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Artist Searcher</title>
+	<link rel="stylesheet" href="../AS3/css/bootstrap.css">
+	<script src="../AS3/js/jquery-2.1.1.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<input type="type" id="artist" placeholder="artist name">
+
+	<ul id="results"></ul>
+
+
+
+
+	<script >
+
+
+		function searchArtist( name ){
+			$.ajax({
+			  url: "http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=" + name + "&api_key=2a33de328909a28aefd0c197f7668a0f&format=json",
+			  cache: true
+			})
+			  .done(function( jsonObj ) {
+			    for ( i = 0; i < jsonObj.results.artistmatches.artist.length ; i++){
+			    	$("#results").html($("#results").html() + "<li>" + jsonObj.results.artistmatches.artist[i].name + "</li>");
+			    }
+			  });
+		}
+         $(document).ready(function(){
+         	$("#artist").keyup(function(event) {
+         		$("#results").html("");
+         		searchArtist($(this).val());
+         	});
+         });
+	</script>
+	
+</body>
+</html>
