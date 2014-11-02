@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>JavaScript Form Validation</title>
+        <link rel="stylesheet" href="css/FormValidation.css">
+        <script type="text/javascript" src="js/FormValidation.js" ></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <ul class="nav nav-pills nav-stacked col-md-3">
+                <li> <a href="index.html" title="Home">Home</a></li>
+                <li> <a href="standards.html" title="Programming">Resources</a></li>
+                <li> <a href="debugging.html" title="Debugging">Debugging</a></li>
+                <li> <a href="testing.html" title="Unit Testing">Unit Testing</a></li>
+                <li> <a href="canvas.html" title="(RAW) CANVAS">(RAW) CANVAS</a></li>
+                <li> <a href="examples.html" title="examples.html">Examples</a></li>
+                <li> <a href="forms.html" title="forms.html">Forms</a></li>
+                <li> <a href="examplesForms.html" title="examplesForms.html">More From Examples</a></li>
+                <li> <a href="form2.html" title="Another form example">Another Form Example</a></li>
+                <li> <a href="Security.html" title="security.html">Security</a></li>
+                <li> <a href="Webgl.html" title="webgl.html">Webgl</a></li>
+                <li> <a href="jquery.html" title="jquery.html">Jquery</a></li>
+                <li> <a href="dragdrop.html" title="drag and drop">Drag and drop Example</a></li>
+            </ul>
+            <h2>JavaScript Form Validation</h2>
+
+            <form id="theForm" method="get" action="submitData">
+                <table>
+                    <tr>
+                        <td>Name<span class="red">*</span></td>
+                        <td><input type="text" id="name" name="name"/></td>
+                        <td id="nameError" class="red">&nbsp;</td></tr>
+
+                    <tr>
+                        <td>Phone<span class="red">*</span></td>
+                        <td><input type="text" id="phone" name="phone" /></td>
+                        <td id="phoneError" class="red">&nbsp;</td></tr>
+                    <tr>
+                        <td>Email<span class="red">*</span></td>
+                        <td><input type="text" id="email" name="email" /></td>
+                        <td id="emailError" class="red">&nbsp;</td></tr>
+
+                    <td>Preferences<span class="red">*</span></td>
+                    <td><input type="checkbox" name="color" value="r" />Red
+                        <input type="checkbox" name="color" value="g" />Green
+                        <input type="checkbox" name="color" value="b" />Blue</td>
+                    <td id="colorError" class="red">&nbsp;</td></tr>
+
+                    <td>&nbsp;</td>
+                    <td><input type="submit" value="SEND" id="submit"/>&nbsp;
+                        <input type="reset" value="CLEAR" id="reset"/></td>
+                    <td>&nbsp;</td></tr>
+
+
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

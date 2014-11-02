@@ -1,77 +1,79 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>3rd Assignment</title>
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/custom.css">
-		
-	</head>
-	<body>
-		<div class="container">
-			<ul class="nav nav-pills nav-stacked col-md-3">
-				<li class="active"> <a href="index.html" title="Home">Home</a> </li>
-				<li> <a href="standards.html" title="Programming">Resources</a></li>
-				<li> <a href="debugging.html" title="Debugging">Debugging</a></li>
-				<li> <a href="testing.html" title="Unit Testing">Unit Testing</a></li>
-				<li> <a href="canvas.html" title="(RAW) CANVAS">(RAW) CANVAS</a></li>
-				<li> <a href="examples.html" title="examples.html">Examples</a></li>
-				<li> <a href="forms.html" title="forms.html">Forms</a></li>
-				<li> <a href="examplesForms.html" title="examplesForms.html">More From Examples</a></li>
-            	<li> <a href="Security.html" title="security.html">Security</a></li>
-            	<li> <a href="Webgl.html" title="webgl.html">Webgl</a></li>
-            	<li> <a href="jquery.html" title="jquery.html">Jquery</a></li>
-            	<li> <a href="dragdrop.html" title="drag and drop">Drag and drop Example</a></li>
-			</ul>
-			<div class="content col-md-9">
-				<h1>Javascript Form Example</h1>
-				<form name='form' Method="GET" action="submit()">
-					<p>Complete the form.</p></br>
-					<input type="text" id="name" placeholder="Name" required onblur=enableEmail() onKeyup=checkform()></br>
-					<input type="text" id="email" placeholder="Email" required disabled onblur=enablePhone() onKeyup=checkform()></br>
-					<input type="text" id="phone" placeholder="Phone" required disabled onblur=enableSubmit() onKeyup=checkform()></br>
-					<p>Choose a color</p></br>
-					<select>
-						<option value="brown">Brown</option>
-						<option value="gold">Gold</option>
-						<option value="green">Green</option>
-						<option value="white">White</option>
-					</select></br>
-					<input type="reset" value="Reset">
-					<input type="button" name="submit" id="submit" value="Submit" disabled>
-					
-				</form>
-				<script type="text/javascript">
-					function enableEmail(){
-						document.getElementById("email").disabled = false;
-					}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>3rd Assignment</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/custom.css">
 
-					function enablePhone(){
-						document.getElementById("phone").disabled = false;
-					}
+    </head>
+    <body>
+        <div class="container">
+            <ul class="nav nav-pills nav-stacked col-md-3">
+                <li class="active"> <a href="index.html" title="Home">Home</a> </li>
+                <li> <a href="standards.html" title="Programming">Resources</a></li>
+                <li> <a href="debugging.html" title="Debugging">Debugging</a></li>
+                <li> <a href="testing.html" title="Unit Testing">Unit Testing</a></li>
+                <li> <a href="canvas.html" title="(RAW) CANVAS">(RAW) CANVAS</a></li>
+                <li> <a href="examples.html" title="examples.html">Examples</a></li>
+                <li> <a href="forms.html" title="forms.html">Forms</a></li>
+                <li> <a href="examplesForms.html" title="examplesForms.html">More From Examples</a></li>
+                <li> <a href="form2.html" title="Another form example">Another Form Example</a></li>
+                <li> <a href="Security.html" title="security.html">Security</a></li>
+                <li> <a href="Webgl.html" title="webgl.html">Webgl</a></li>
+                <li> <a href="jquery.html" title="jquery.html">Jquery</a></li>
+                <li> <a href="dragdrop.html" title="drag and drop">Drag and drop Example</a></li>
+            </ul>
+            <div class="content col-md-9">
+                <h1>Javascript Form Example</h1>
+                <form name='form' Method="GET" action="submit()">
+                    <p>Complete the form.</p></br>
+                    <input type="text" id="name" placeholder="Name" required onblur=enableEmail() onKeyup=checkform()></br>
+                    <input type="text" id="email" placeholder="Email" required disabled onblur=enablePhone() onKeyup=checkform()></br>
+                    <input type="text" id="phone" placeholder="Phone" required disabled onblur=enableSubmit() onKeyup=checkform()></br>
+                    <p>Choose a color</p></br>
+                    <select>
+                        <option value="brown">Brown</option>
+                        <option value="gold">Gold</option>
+                        <option value="green">Green</option>
+                        <option value="white">White</option>
+                    </select></br>
+                    <input type="reset" value="Reset">
+                    <input type="button" name="submit" id="submit" value="Submit" disabled>
 
-					function enableSubmit(){
-						document.getElementById("submit").disabled = false;
-					}
+                </form>
+                <script type="text/javascript">
+                    function enableEmail() {
+                        document.getElementById("email").disabled = false;
+                    }
 
-					function submit(){
-						alert("Submitted");
-					}
-					function checkform(){
-        				var f = document.forms["theform"].elements;
-        				var cansubmit = true;
+                    function enablePhone() {
+                        document.getElementById("phone").disabled = false;
+                    }
 
-        				for (var i = 0; i < f.length; i++) {
-            				if (f[i].value.length == 0) cansubmit = false;
-        				}
+                    function enableSubmit() {
+                        document.getElementById("submit").disabled = false;
+                    }
 
-        					if (cansubmit) {
-            					document.getElementById('submitbutton').disabled = !cansubmit;
-        					}
-    				}
-				</script>
-			</div>
-		</div>
-</body>
+                    function submit() {
+                        alert("Submitted");
+                    }
+                    function checkform() {
+                        var f = document.forms["theform"].elements;
+                        var cansubmit = true;
+
+                        for (var i = 0; i < f.length; i++) {
+                            if (f[i].value.length == 0)
+                                cansubmit = false;
+                        }
+
+                        if (cansubmit) {
+                            document.getElementById('submitbutton').disabled = !cansubmit;
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
 </html>
