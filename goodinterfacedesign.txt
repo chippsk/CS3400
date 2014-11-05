@@ -1,5 +1,5 @@
 Find examples of good and bad interface design.
-
+test
 good interface design rules
 
 	fonts
@@ -16,9 +16,10 @@ good interface design rules
 		cross platform issues
 
 	sound
-		volumne
+		volume
 		cross platform
 		accessability
 
 	mobile devices
 	accessability
+jquery
