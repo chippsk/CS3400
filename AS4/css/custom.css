@@ -5,7 +5,7 @@ li a {
 
 
 body, html, .container {
-	height: 100%;
+	min-height: 100%;
 }
 .container {
 	background-color: rgba(0, 0, 0, .07);
@@ -27,4 +27,21 @@ body, html, .container {
 	padding-top: 30px;
 	padding-left: 50px;
 
+}
+
+.contentParagraph {
+	border-left: 1px dashed rgba(0,0,0,.1);
+	margin-left: 40px;
+	padding-left: 15px;
+	padding-right: 50px;
+	font-size: 1.2em;
+}
+
+ul {
+	display: inline;
+}
+
+img {
+	display: block;
+	margin: auto;
 }
