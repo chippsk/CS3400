@@ -1,4 +1,4 @@
-[Kinetic Sculpture]
+Sculpture]
 
 1 - Plot the 2 bars with angles between them [ use two sliders ]
 2 - Make the functions to calculate de Theta functions 
@@ -19,3 +19,19 @@ Stuff to do
 3.	Look for sites with guidelines for good user interface design. (fonts,color)
 
 Then he droned on for an hour about colors.
+
+
+
+To set for the demo
+
+be able to change 
+graph energy
+set speed /show time
+show paths
+show legs
+show comet tail
+change position/velocity
+help page
+references
+save/restore?
+sound?
