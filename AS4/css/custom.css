@@ -1,6 +1,7 @@
 li a {
 	height: 60px;
 	vertical-align: center;
+	padding-left:5em;
 }
 
 
@@ -37,9 +38,7 @@ body, html, .container {
 	font-size: 1.2em;
 }
 
-ul {
-	display: inline;
-}
+
 
 img {
 	display: block;
