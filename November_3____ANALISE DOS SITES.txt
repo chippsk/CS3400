@@ -1,0 +1,20 @@
+2- (3) Could improve with responsiveness. And not putting black fonts with that dark grey background. 
+
+3- (6) The content could be separated between more pages to increase readabilty. There are some examples but some topics are missing. Also it could use some css to look more appealing. 
+
+4- (4) The Index page looks very good but it leaves room to improvement in the user experience... The menu in full screen is "hidden in the top-right part". A bunch of the links open a new tab, which makes the "home" link not that useful... There's no links about Code standards, security, debugging, etc. 
+
+5- (3) They could improve the readability of the web page adding a navigation bar to it. And not putting all the content in the front page. 
+
+6- (1) Lots of nice examples. Looks very nice. 
+The only thing to complain is the use of a dark color font in a dark background it made me squint. hahaha
+
+7- (2) Lots of usefull and good information. Easy to find what you want. But that borders don't look so good. It is responsive but the side buttons tend to get messed up (which is not so problematic.)
+
+8- (3) Has a lot of information. And has a design that is consistent. Could improve with the fonts and making some parts of the site fixed (like the footer that keeps moving around.) It is not responsive. 
+
+9- (4) Could have more information like links and bigger descriptions. The font size in some places is too small, which can be a problem with people that can't see that well. 
+It also not responsive. The examples could be more complex or point to the more complex examples.
+
+10- (5) It doesn't have as many decriptions as a User would like. The Google Drive link leads me to my Google Drive, which is disapointing.  
+
