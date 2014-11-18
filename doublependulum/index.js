@@ -1,4 +1,5 @@
 var simulator;
+var test;
 
 function double_pendulum(canvas) {
 
@@ -13,6 +14,7 @@ function double_pendulum(canvas) {
     this.qp[j] = 0;
     this.qp_[j] = 0;
   }
+
   this.qp[0] = 0.5;
 
   this.length1 = 1;
@@ -169,6 +171,7 @@ double_pendulum.prototype.update = function() {
   var ctx = this.ctx;
 //Determines color of the trace
   var bgctx = this.bgctx;
+  
   bgctx.fillStyle="rgba(0,0,0, 0.015)";
   bgctx.fillRect(0, 0, width ,height);
 
@@ -177,7 +180,11 @@ double_pendulum.prototype.update = function() {
   bgctx.strokeStyle = "rgb(255,255,255)";
   bgctx.moveTo(this.x2_canvas_old, this.y2_canvas_old);
   bgctx.lineTo(x2_canvas, y2_canvas);
-  //bgctx.stroke();
+  
+  if(test==true){
+    console.log("stuff");
+  bgctx.stroke();
+  }
 
   //bgctx.fillStyle = "rgb(255,255,255)";
   //bgctx.fillRect(x2_canvas, y2_canvas, 0.1, 0.1);
@@ -243,3 +250,4 @@ window.onload = function() {
 
   return true;
 };
+

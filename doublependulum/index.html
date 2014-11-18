@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8" />
-<title>Double Pendulum - js do it</title>
-<meta name="Description" content="" />
-<meta name="Keywords"  content="" />
+	<head>
+	<meta charset="UTF-8" />
+	<title>Double Pendulum</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/custom.css">
 
-<link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
+	<link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
 </head>
 <body>
-<form name="dpform" style="display: none;">
-energy: <input name="energy" type="text" readonly="readonly" />
-</form>
-<canvas id="canvas" width=1000 height=1000></canvas>
+	<form name="dpform" style="display: none;">
+		energy: <input name="energy" type="text" readonly="readonly" />
+	</form>
+	<div class="container">
 
-<script type="text/javascript" src="index.js"></script>
+		<ul class="nav nav-pills nav-justified" role="tablist">
+ 			<li class="active"> <a href="index.html" title="Home">Home</a></li>
+ 			<li> <a href="help.html" title="Help Page">Help Page</a></li>
+		</ul>
+
+		<hr>
+		
+
+	
+	<p class="title">The Double Pendulum</p>
+	<p class="contentParagraph">
+		Click in the black box to change the position of the pendulum.
+	</p>
+	<form>
+		<input TYPE="button" onClick="history.go(0)" VALUE="Reset">
+	</form>
+	<canvas id="canvas" width=600 height=600 style="border:1px solid #FFFFFF;"></canvas>
+	
+	</div>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
