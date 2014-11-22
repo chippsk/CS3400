@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Survey</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<!-- Navigation bar... Copy this to everypage.  -->
+		<ul class="nav nav-pills nav-justified" role="tablist">
+ 			<li class="active"> <a href="index.html" title="Home">Home</a></li>
+		</ul>
+
+		<hr>
+		<p class="title">Survey</p>
+		<p class="contentParagraph">
+			Please rate your experience, the highest number meaning most statisfied
+		</p>
+		<!--
+		<form role="form" action="done.html">
+  			<div class="form-group">
+    			<label for="email">Email address:</label>
+    			<input type="email" class="form-control" id="email">
+  			</div>
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" class="form-control" id="pwd">
+		  	</div>
+		 	<div class="checkbox">
+    			<label><input type="checkbox"> Remember me</label>
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		-->
+	
+
+	 <form class="form" role="form">
+  	 	<div class="form-group">
+    		<label for="email">Email address:</label>
+    		<input type="email" class="form-control" id="email">
+  		</div>
+  		<br>
+  		<div class="form-group">
+    		<label for="pwd">How often do you visit the site?</label><br>
+    		Daily<input type="radio" value="daily" name="xp" class="form-control" id="d">
+    		Every few days<input type="radio" value="days" name="xp"class="form-control" id="dd">
+    		Weekly<input type="radio" value="weekly" name="xp"class="form-control" id="w">
+    		Montly<input type="radio" value="monthly" name="xp"class="form-control" id="m">
+    		Rarely<input type="radio" value="rarely" name="xp"class="form-control" id="r">
+  		</div>
+
+  		<div class="form-group">
+   	 		<label for="q2">How likely are you to return to the website? 1 is lowest</label>
+   	 		<p></p>
+   	 		1<input type="radio" value="not" name="return">
+   	 		2<input type="radio" value="notmaybe" name="return">
+   	 		3<input type="radio" value="maybe" name="return">
+   	 		4<input type="radio" value="okmaybe" name="return">
+   	 		5<input type="radio" value="ok" name="return">
+  		</div>
+		<div class="form-group">
+   	 		<label for="q3">Recommend the website? 1 is lowest</label>
+   	 		<p></p>
+   	 		1<input type="radio" value="not" name="return">
+   	 		2<input type="radio" value="notmaybe" name="return">
+   	 		3<input type="radio" value="maybe" name="return">
+   	 		4<input type="radio" value="okmaybe" name="return">
+   	 		5<input type="radio" value="ok" name="return">
+   	 	</div>
+  		<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+</div>
+</body>
+</html>
