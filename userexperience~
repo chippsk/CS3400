@@ -8,7 +8,7 @@ User experience
 
 
 
-Reasonable examples of useability evauluation tools.
+Reasonable examples of useability evauluation tools.'
 
 Design Rules 
 	Human Factors
@@ -17,11 +17,11 @@ Design Rules
 		let the user know something is happening
 		see the result of every action
 	High Level
-		eight high level rules ben shneiderman 8 golden rules -> 8 websites
-		http://faculty.washington.edu/jtenenbg/courses/360/f04/sessions/schneidermanGoldenRules.html
+		eight high level rules ben something 8 golden rules -> 8 websites
 		search for a website that violates those rules
 		build a consisitent interface
 		don't overload users short term memory
+		
 	Low level 
 		color 
 		layout
