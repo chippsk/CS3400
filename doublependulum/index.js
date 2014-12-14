@@ -181,11 +181,9 @@ double_pendulum.prototype.update = function() {
   bgctx.moveTo(this.x2_canvas_old, this.y2_canvas_old);
   bgctx.lineTo(x2_canvas, y2_canvas);
   
-  if(test==true){
-    console.log("stuff");
-  bgctx.stroke();
-  }
 
+  bgctx.stroke();
+  
   //bgctx.fillStyle = "rgb(255,255,255)";
   //bgctx.fillRect(x2_canvas, y2_canvas, 0.1, 0.1);
 
